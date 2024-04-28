@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <a href="javascript:history.back()">Volver atrás</a>
+    <h1>{{ post.title }}</h1>
+    <h2>{{ post.subtitle }}</h2>
+    <p>{{ post.body }}</p>
+{% endblock content %}
+

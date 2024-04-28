@@ -1,0 +1,12 @@
+
+.img-container{
+    width: 300px;
+}
+img{
+    border-radius: 20px;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
