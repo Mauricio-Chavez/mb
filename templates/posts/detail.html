@@ -3,9 +3,10 @@
 {% block title %}{{ post.title }}{% endblock %}
 
 {% block content %}
-    <a href="javascript:history.back()">Volver atrás</a>
-    <h1>{{ post.title }}</h1>
+    
+    <h1><a href="javascript:history.back()"><i class="fa-solid fa-angle-left"></i></a>{{ post.title }}</h1>
     <h2>{{ post.subtitle }}</h2>
+    <small><b>Created On: </b>{{ post.created_on }}</small>
     <p>{{ post.body }}</p>
 {% endblock content %}
 

@@ -16,10 +16,11 @@ class PostDetailView(DetailView):
     model = Post
 
 class PostCreateView(CreateView):
-    template_name = 'posts/create.html'
+    template_name = 'posts/new.html'
     model = Post
     fields = ['title','subtitle','body']
-
+    
+    
 class HomePageView(TemplateView):
     template_name = "pages/home.html"
     
